@@ -7,8 +7,8 @@
 
 ## Working Directory
 # Set the right working directory here.
-# Call all the files from the right directory by either pulling them all
-# together or get them from the stored directory.
+# Call all the files from the right directory by either storing them all
+# together in the same directory or get them from their stored directory.
 
 ## Load necessary packages See step 5
 library(reshape2)
@@ -67,4 +67,5 @@ fsetsel$activity<-factor(fsetsel$activity,labels=actlabs)
 molten<-melt(fsetsel,id=c("IDsubject","activity"))
 tdata<-dcast(molten,IDsubject+activity~variable, mean)
 
+# Output .txt file
 write.table(tdata, "tidy.txt",row.names=FALSE)
