@@ -22,7 +22,7 @@ This code book lists the number of different files used in order to result a tid
 
 More information about the files is available in `README.txt` from the [zipfile](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). More information about the features is available in `features_info.txt`.
 
-## Data files that were not used
+**Data files that were not used**
 
 This tidy dataset was constructed using only the files above, and did not use the raw signal data. The data files in the "Inertial Signals" folders, which are included in the raw data were excluded from the construction of this project's tidy dataset.
 
