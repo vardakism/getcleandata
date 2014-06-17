@@ -7,7 +7,7 @@ Here is a repo for [Getting and Cleaning Data](https://www.coursera.org/course/g
 
 1. Download the data zip file to your home directory from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 2. Unzip the file.
-3.Either move them to the same directory or explicit state the path in the `read.table()` commands.
+3. Either move them to the same directory or explicit state the path in the `read.table()` commands
 4. ALL the used file for this analysis are:
 	* `features.txt`
 	* `subject_train.txt`
