@@ -26,10 +26,10 @@ More information about the files is available in `README.txt` from the [zipfile]
 
 This tidy dataset was constructed using only the files above, and did not use the raw signal data. The data files in the "Inertial Signals" folders, which are included in the raw data were excluded from the construction of this project's tidy dataset.
 
-## Processing steps of  ([run_analysis.R](run_analysis.R))
+## Processing steps of ([run_analysis.R](run_analysis.R))
 
 1. Data files are read into data frames, appropriate column headers are added, and the training and test sets are combined into a single data set.
-2. Only feature columns that contain the exact string "mean()" or "std()" are kept for this analysis. This produces a 68 feature columns, with the subjectID and activity columns.
+2. Only feature columns that contain the exact string "mean()" or "std()" are kept for this analysis. This produces a 68 feature columns, with the subjectID and activity columns.Please note here that variables that inlcude the word mean or std in their title i.e. meanfreq() are not inlcluded in this analysis. 
 3. The activity column is converted from a integer to a factor, using labels describing the activities.
 4. A tidy data set is created containing the mean of each feature of interest for each subject and each activity. Thus, subject 1 has 6 rows in the tidy data set (one row for each activity), and each row contains the mean value for each of the 66 features for that subject/activity combination. Since there are 30 subjects, there are in total 180 rows.
 5. The tidy data set was output to a TXT file.
