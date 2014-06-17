@@ -8,11 +8,11 @@ This code book lists the number of different files used in order to result a tid
 
 ## Explanation of the contents of every file used.
 
-** The labels
+** The labels**
 * `features.txt`: Descriptive labels of the 561 features.
 * `activity_labels.txt`: Descriptive labels for each of the 6 activities.
 
-** The sets
+** The sets**
 * `X_train.txt`: 7352 observations of the 561 features, for 21 of the 30 volunteers in the training set.
 * `subject_train.txt`: A vector of 7352 integers, illustrating the ID of the volunteer related to each of the observations in `X_train.txt`.
 * `y_train.txt`: A vector of 7352 integers, denoting the ID of the activity related to each of the observations in `X_train.txt`.
@@ -23,11 +23,11 @@ This code book lists the number of different files used in order to result a tid
 
 More information about the files is available in `README.txt` from the [zipfile](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). More information about the features is available in `features_info.txt`.
 
-### Data files that were not used
+## Data files that were not used
 
 This tidy dataset was constructed using only the files above, and did not use the raw signal data. The data files in the "Inertial Signals" folders, which are included in the raw data were excluded from the construction of this project's tidy dataset.
 
-### Processing steps
+## Processing steps
 
 1. Data files are read into data frames, appropriate column headers are added, and the training and test sets are combined into a single data set.
 2. Only feature columns that contain the exact string "mean()" or "std()" are kept for this analysis. This produces a 68 feature columns, with the subjectID and activity columns.
