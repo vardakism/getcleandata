@@ -1,6 +1,6 @@
 ## Code Book
 
-This code book lists the number of different files used in order to result a tidy dataset from smartphone movementdata using the R script: `run_analysis.R`.
+This code book lists the number of different files used in order to result a tidy dataset from smartphone movementdata using the R script:  ([run_analysis.R](run_analysis.R)).
 
 ## Overview
 
@@ -14,11 +14,11 @@ This code book lists the number of different files used in order to result a tid
 
 **The sets**
 * `X_train.txt`: 7352 observations of the 561 features, for 21 of the 30 volunteers in the training set.
-* `subject_train.txt`: A vector of 7352 integers, illustrating the ID of the volunteer related to each of the observations in `X_train.txt`.
-* `y_train.txt`: A vector of 7352 integers, denoting the ID of the activity related to each of the observations in `X_train.txt`.
+* `subject_train.txt`: A vector of 7352 integers, illustrating volunteer's ID related to each  observation in `X_train.txt`.
+* `y_train.txt`: A vector of 7352 integers, denoting the ID of the activity related to each observation in `X_train.txt`.
 * `X_test.txt`: 2947 observations of the 561 variables, for 9 of the 30 volunteers in the test set.
-* `subject_test.txt`: A vector of 2947 integers, illustrating the ID of the volunteer related to each of the observations in `X_test.txt`.
-* `y_test.txt`: A vector of 2947 integers, denoting the ID of the activity related to each of the observations in `X_test.txt`.
+* `subject_test.txt`: A vector of 2947 integers, illustrating volunteer's ID  related to each observation in `X_test.txt`.
+* `y_test.txt`: A vector of 2947 integers, denoting the ID of the activity related to each observations in `X_test.txt`.
 
 More information about the files is available in `README.txt` from the [zipfile](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). More information about the features is available in `features_info.txt`.
 
@@ -26,7 +26,7 @@ More information about the files is available in `README.txt` from the [zipfile]
 
 This tidy dataset was constructed using only the files above, and did not use the raw signal data. The data files in the "Inertial Signals" folders, which are included in the raw data were excluded from the construction of this project's tidy dataset.
 
-## Processing steps of `run_analysis.R`
+## Processing steps of  ([run_analysis.R](run_analysis.R))
 
 1. Data files are read into data frames, appropriate column headers are added, and the training and test sets are combined into a single data set.
 2. Only feature columns that contain the exact string "mean()" or "std()" are kept for this analysis. This produces a 68 feature columns, with the subjectID and activity columns.

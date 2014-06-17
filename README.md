@@ -15,7 +15,9 @@ Here is a repo for [Getting and Cleaning Data](https://www.coursera.org/course/g
 	* `subject_test.txt`
 	* `y_train.txt`
 	* `y_test.txt`
-Either move them to the same directory or explicit state the path in the `read.table` commands.
+
+(Either move them to the same directory or explicit state the path in the `read.table` commands.)
+
 4. Install/Load the R package [reshape2](http://cran.r-project.org/web/packages/reshape2/index.html) from CRAN.
 5. Run the R script ([run_analysis.R](run_analysis.R)).
 6. Outputs the .txt file [tidy.csv](tidy.txt).
