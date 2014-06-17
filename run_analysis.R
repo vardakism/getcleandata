@@ -14,6 +14,7 @@
 library(reshape2)
 
 ##### Step 1 ####
+# Merges the training and the test sets to create one data set.
 
 varnames<-read.table("features.txt",header=F)
 varnames$V3<-as.character(varnames$V2)
@@ -54,7 +55,11 @@ selcol[1:2]<-TRUE
 fsetsel<-fullset[,selcol]
 
 ##### Step 3 & 4 ####
-# Variable names are given while importing and merging them to data.frame
+# Uses descriptive activity names to name the activities in the data set
+# Appropriately labels the data set with descriptive variable names.
+# Please note"ariable names are given while importing and merging them to
+# data.frame
+
 act<-read.table("activity_labels.txt") #import activity names
 actlabs<-as.character(act$V2)
 # Make activity as a factor and insert the activity names as a label
